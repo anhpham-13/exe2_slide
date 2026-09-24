@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeMind — Smart Home Inventory | Pitch Deck EXE101</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+</head>
+
+<body>
+
+  <div id="demo-bar"
+    style="position:fixed;top:0;left:0;right:0;height:4px;z-index:9999;background:var(--border);display:none;">
+    <div id="demo-progress" style="height:100%;background:var(--primary);width:0%;transition:width 0.3s linear;"></div>
+  </div>
+
+  <!-- <nav class="slide-nav">
+    <button onclick="prevSlide()" title="Slide trước (Mũi tên Trái / Up)">◀</button>
+    <div class="slide-dots" id="dots"></div>
+    <span class="slide-counter" id="counter">1 / 13</span>
+    <button onclick="nextSlide()" title="Slide tiếp (Mũi tên Phải / Down)">▶</button>
+    <button class="auto-btn" id="autoPlayBtn" onclick="toggleAutoPlay()" title="Tự động phát (Phím Spacebar)">▶
+      Auto</button>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Chuyển chế độ Sáng/Tối (Phím D)">🌙</button>
+    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()"
+      title="Toàn màn hình (Phím F)">⛶</button>
+    <button onclick="goSlide(0)" title="Trở về Slide 1 (Phím Home)">⟳</button>
+  </nav> -->
+
+  <div class="slides-wrapper" id="slidesWrapper">
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 1: OPENING (ULTRA HERO)    -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide slide-opening active" data-index="0">
+      <!-- Background Cyber Mesh Grid Overlay -->
+      <div class="hero-bg-grid"></div>
+
+      <!-- Top Right Branding Bar -->
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+
+      <div class="slide-inner hero-slide-container">
+        <!-- 3 Ambient Glowing Orbs -->
+        <div class="hero-glow-orb-main glow-emerald"></div>
+        <div class="hero-glow-orb-main glow-amber"></div>
+        <div class="hero-glow-orb-main glow-cyan"></div>
+
+        <div class="hero-grid-ultra">
+          <!-- Left Column: Headline, Live Simulator, Chips, Metrics, CTA -->
+          <div class="hero-content-ultra">
+            <!-- Shimmering Pill Badge -->
+            <div class="hero-pill-shimmer">
+              <span class="pulse-badge-icon">⚡</span>
+              <span>DỰ ÁN KHỞI NGHIỆP EXE101 · PITCHING DAY 2026</span>
+            </div>
+
+            <!-- Giant Title -->
+            <h1 class="hero-title-giant">HomeMind</h1>
+            <div class="hero-subtitle-ultra">
+              Quản lý tủ đồ gia đình <span class="text-gradient-shimmer">bằng AI 4.0</span>
+            </div>
+
+            <!-- Lead Paragraph -->
+            <p class="hero-lead-ultra">
+              Giải pháp trí tuệ nhân tạo tiên phong giúp hàng triệu gia đình Việt <strong>xóa bỏ 95% lãng phí thực phẩm</strong>, tiết kiệm <strong>80% thời gian ghi nhớ</strong> và tự động hóa toàn bộ tủ đồ gia đình.
+            </p>
+
+            <!-- Live Speech Simulator Pill -->
+            <div class="live-voice-sim-box">
+              <div class="sim-mic-btn" title="Trải nghiệm Voice Input AI">🎤</div>
+              <div class="sim-content">
+                <div class="sim-label">
+                  <span>🎙️ Voice Input Simulation</span>
+                  <div class="voice-wave-bars" style="height:10px;">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="sim-speech-text">
+                  "Tôi vừa mua 1kg Đường hạn 6 tháng, Sữa chua hạn 7 ngày và Dầu gội hạn 1 năm"
+                </div>
+              </div>
+              <div class="sim-badge-time">⚡ 0.8s Processed</div>
+            </div>
+
+            <!-- Feature Chips -->
+            <div class="hero-chips-row">
+              <span class="hero-chip">🎤 AI Voice Recognition</span>
+              <span class="hero-chip" style="color:var(--gold);">⏰ Smart Expiry Radar</span>
+              <span class="hero-chip" style="color:var(--accent);">🛒 AI Shopping Assistant</span>
+              <span class="hero-chip" style="color:var(--info);">👨‍👩‍👧‍👦 Family Cloud Sync</span>
+            </div>
+
+            <!-- 4-Column Ultra Stat Cards -->
+            <div class="hero-stats-4col">
+              <div class="ultra-stat-card">
+                <div class="stat-glow-num">3s</div>
+                <div class="stat-glow-label">Nhập SP bằng Giọng nói</div>
+              </div>
+              <div class="ultra-stat-card">
+                <div class="stat-glow-num gold">95%</div>
+                <div class="stat-glow-label">Giảm lãng phí thực phẩm</div>
+              </div>
+              <div class="ultra-stat-card">
+                <div class="stat-glow-num accent">111+</div>
+                <div class="stat-glow-label">Khảo sát thực tế FPT</div>
+              </div>
+              <div class="ultra-stat-card">
+                <div class="stat-glow-num blue">100%</div>
+                <div class="stat-glow-label">Tự động nhận diện AI</div>
+              </div>
+            </div>
+
+            <!-- Action CTA & Team Meta -->
+            <div class="hero-actions-row">
+              <a class="btn-hero-launch">
+                <span>🚀 Nhóm EXE101 · Đại học FPT</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Dual Overlapping 3D Phone Mockups -->
+          <div class="hero-dual-mockup-container">
+            <!-- Back Phone: Voice Recording State -->
+            <div class="phone-card-back">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots">
+                  <span class="m-dot dot-red"></span>
+                  <span class="m-dot dot-yellow"></span>
+                  <span class="m-dot dot-green"></span>
+                </div>
+                <div class="mockup-title-badge">🎤 Voice Input</div>
+              </div>
+              <img src="assets/images/demo/demo_voice_listening.png" alt="HomeMind Voice Listening" class="mockup-img-fit">
+            </div>
+
+            <!-- Front Phone: AI Auto Confirmation State -->
+            <div class="phone-card-front">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots">
+                  <span class="m-dot dot-red"></span>
+                  <span class="m-dot dot-yellow"></span>
+                  <span class="m-dot dot-green"></span>
+                </div>
+                <div class="mockup-title-badge">✨ AI Parsed</div>
+              </div>
+              <img src="assets/images/demo/demo_ai_confirmation.png" alt="HomeMind AI Result" class="mockup-img-fit">
+            </div>
+
+            <!-- Floating Hologram Badges -->
+            <div class="holo-floating-badge holo-pos-top-left">
+              <div class="holo-icon-circle">🎤</div>
+              <div>
+                <div class="holo-title">Voice AI Engine 3.0</div>
+                <div class="holo-sub">"Tôi vừa mua đường, sữa chua..."</div>
+              </div>
+            </div>
+
+            <div class="holo-floating-badge holo-pos-center-right">
+              <div class="holo-icon-circle holo-icon-blue">✨</div>
+              <div>
+                <div class="holo-title">GPT-4 Vision & Audio</div>
+                <div class="holo-sub">Độ chính xác > 98%</div>
+              </div>
+            </div>
+
+            <div class="holo-floating-badge holo-pos-bottom-right">
+              <div class="holo-icon-circle holo-icon-orange">⚡</div>
+              <div>
+                <div class="holo-title">Tự động nhận diện 100%</div>
+                <div class="holo-sub">Bóc tách 3 sản phẩm & Hạn dùng</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 2: AGENDA                 -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="1">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">📋 NỘI DUNG THUYẾT TRÌNH</span>
+        <h2>Chương Trình Hôm Nay</h2>
+        <p class="lead" style="margin-bottom:28px;">Hội đồng giám khảo sẽ theo dõi hành trình HomeMind qua <strong>10
+            phần nội dung</strong> được trình bày theo trình tự logic từ vấn đề đến giải pháp và tiềm năng tăng trưởng.
+        </p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;">
+
+          <!-- Left column -->
+          <div style="display:flex;flex-direction:column;gap:12px;">
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(47,191,113,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                01</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">👥 Giới
+                  thiệu Đội ngũ</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">6 thành viên EXE101 — FPT
+                  University</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(239,68,68,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--danger);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                02</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">😩 Vấn đề
+                  Thực tế</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Pain points — Dữ liệu khảo sát
+                  111 người</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(47,191,113,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--primary),#22C55E);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                03</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">💡 Giải
+                  pháp &amp; Đột phá</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">AI Voice + Vision — Zero Text
+                  Entry 3 giây</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(59,130,246,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--info);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                04</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">📊 Phân
+                  tích Thị trường</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Smart Home VN $358M → $1.7B |
+                  TAM/SAM/SOM</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(245,158,11,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                05</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">🔬 Market
+                  Validation</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">111 mẫu khảo sát sơ cấp — Chân
+                  dung KH</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right column -->
+          <div style="display:flex;flex-direction:column;gap:12px;">
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(47,191,113,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#10B981,#059669);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                06</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">📱
+                  Product Demo</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Giao diện thực tế — AI Voice
+                  Input Live</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(255,107,53,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                07</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">💼 Mô
+                  hình Kinh doanh</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Freemium + Subscription +
+                  Affiliate</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(47,191,113,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#6366F1,#4F46E5);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                08</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">🚀 Lộ
+                  trình Phát triển</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">3-Year Roadmap — 3.720 users
+                  (2027–2029)</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(245,158,11,0.4)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow-md)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#D97706);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                09</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--text);">📈 Dự
+                  phóng Tài chính</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">P&amp;L 3 năm — Hòa vốn Q4/2028
+                  · MRR 409M</div>
+              </div>
+            </div>
+
+            <div class="agenda-item"
+              style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:linear-gradient(135deg,rgba(47,191,113,0.06),rgba(47,191,113,0.02));border:1.5px solid rgba(47,191,113,0.35);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);transition:all 0.25s ease;cursor:default;"
+              onmouseover="this.style.borderColor='rgba(47,191,113,0.6)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(47,191,113,0.18)'"
+              onmouseout="this.style.borderColor='rgba(47,191,113,0.35)';this.style.transform='';this.style.boxShadow='var(--shadow-sm)'">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;font-family:var(--font-heading);flex-shrink:0;">
+                10</div>
+              <div>
+                <div style="font-family:var(--font-heading);font-weight:700;font-size:14px;color:var(--primary-dark);">
+                  💰 Kêu gọi Đầu tư &amp; Q&amp;A</div>
+                <div style="font-size:12px;color:var(--text-secondary);margin-top:2px;">Pre-Seed 56M₫ · Comparables ~2.41 tỷ₫ ·
+                  Hỏi đáp</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 3: DEDICATED TEAM SLIDE   -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="2">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">👥 ĐỘI NGŨ DỰ ÁN</span>
+        <h2>Team HomeMind — Nhóm 6 Thành Viên</h2>
+        <p class="lead">Sự kết hợp giữa đội ngũ quản trị, phát triển kỹ thuật và chiến lược tiếp thị thị trường từ Đại
+          học FPT.</p>
+
+        <div class="team-grid-detailed mb-24">
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/PhamThiAnh.png" alt="Phạm Thị Ánh" class="team-photo-lg">
+            <div>
+              <div class="team-name">Phạm Thị Ánh</div>
+              <div class="team-role">Project Manager (PM)</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Quản trị dự án, xây dựng tầm nhìn sản phẩm & điều phối chiến lược kinh doanh B2B/B2C.
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/HoaiBao.png" alt="Hoài Bảo" class="team-photo-lg">
+            <div>
+              <div class="team-name">Hoài Bảo</div>
+              <div class="team-role">Lead Developer</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Tối ưu hóa mô hình AI Voice Tiếng Việt (LLM Gemini Flash) & thiết kế kiến trúc Backend.
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/VuQuang.jpg" alt="Vũ Minh Quang" class="team-photo-lg">
+            <div>
+              <div class="team-name">Vũ Minh Quang</div>
+              <div class="team-role">Fullstack Developer</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Phát triển ứng dụng di động & hệ thống đồng bộ tủ đồ gia đình real-time.
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/MinhThanh.png" alt="Minh Thành" class="team-photo-lg">
+            <div>
+              <div class="team-name">Minh Thành</div>
+              <div class="team-role">Frontend / Mobile Dev</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Thiết kế giao diện UI/UX, AI Confirmation Screen & trải nghiệm quét Barcode 3 giây.
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/HongNhung.png" alt="Hồng Nhung" class="team-photo-lg">
+            <div>
+              <div class="team-name">Hồng Nhung</div>
+              <div class="team-role">Marketing Lead</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Chủ trì khảo sát thực tế 111 người, phân tích nỗi đau người dùng & chiến lược Go-to-Market.
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card-detailed">
+            <img src="assets/images/teamIMG/HaiYen.png" alt="Hải Yến" class="team-photo-lg">
+            <div>
+              <div class="team-name">Hải Yến</div>
+              <div class="team-role">Marketing Specialist</div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-top:4px;">
+                Phát triển nội dung truyền thông TikTok/FB Ads & vận hành kênh giới thiệu Affiliate.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-highlight text-center" style="padding:14px 20px; margin-top: 15px;">
+          <div style="font-size:13.5px;font-weight:800;color:var(--primary-dark);margin-bottom:4px;">🎯 TẠI SAO TEAM
+            HOMEMIND ĐỦ NĂNG LỰC GIẢI QUYẾT BÀI TOÁN NÀY?</div>
+          <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.6;max-width:920px;margin:0 auto;">
+            "Sự kết hợp hoàn hảo giữa <strong>3 Lập trình viên AI/Mobile (LLM Gemini Flash & Realtime Sync)</strong> +
+            <strong>2 Marketing Leads (Khảo sát 111 mẫu thực địa & Go-to-Market)</strong> + <strong>1 PM Điều
+              phối</strong> — Đội ngũ có năng lực kỹ thuật & thực chiến trực tiếp để tối ưu trải nghiệm Zero-Text-Entry
+            3 giây."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 4: PROBLEM                -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="3">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow eyebrow-accent">😩 VẤN ĐỀ THỰC TẾ</span>
+        <h2>Bạn đã từng gặp chuyện này?</h2>
+        <p class="lead">
+          Người dùng không thiếu công cụ — họ thiếu một giải pháp đủ nhanh, đủ tự động để duy trì thói quen quản lý tủ
+          đồ hàng ngày.
+        </p>
+
+        <div class="grid-3 mb-20">
+          <div class="card" style="border-color:rgba(239,68,68,0.25);">
+            <span class="card-icon">🧠</span>
+            <div class="card-title" style="color:var(--danger);">Pain 1 — Gánh nặng ghi nhớ</div>
+            <div class="card-desc">
+              • <strong>48 người</strong> quên mua món đã hết<br>
+              • <strong>49 người</strong> cho biết "có quá nhiều thứ cần nhớ trong nhà"<br>
+              • Dễ mua thừa, mua trùng đồ vẫn còn
+            </div>
+            <div class="mt-8"><span class="tag tag-red">Q10 & Q12 (48/111)</span></div>
+          </div>
+
+          <div class="card" style="border-color:rgba(239,68,68,0.25);">
+            <span class="card-icon">🗑️</span>
+            <div class="card-title" style="color:var(--danger);">Pain 2 — Lãng phí thầm lặng</div>
+            <div class="card-desc">
+              • <strong>47 người</strong> phát hiện sản phẩm đã hết hạn<br>
+              • <strong>42 người</strong> không nhớ HSD của sản phẩm đã mở<br>
+              • Vứt bỏ hàng trăm nghìn đồng mỗi tháng
+            </div>
+            <div class="mt-8"><span class="tag tag-red">Q10 (47/111)</span></div>
+          </div>
+
+          <div class="card" style="border-color:rgba(239,68,68,0.25);">
+            <span class="card-icon">⏱️</span>
+            <div class="card-title" style="color:var(--danger);">Pain 3 — Rào cản nhập liệu</div>
+            <div class="card-desc">
+              • <strong>58 người</strong> từng bỏ ứng dụng quản lý vì nhập liệu thủ công mất thời gian<br>
+              • <strong>45 người</strong> yêu cầu nhập ≤10 giây/sản phẩm mới chấp nhận sử dụng
+            </div>
+            <div class="mt-8"><span class="tag tag-red">Q22 (58/111)</span></div>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top:20px;">
+          <div class="split-item problem text-center">
+            <div style="font-size:36px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">100K –
+              300K₫</div>
+            <div style="font-size:14px;color:var(--text-secondary);margin-top:4px;font-weight:600;">Tiền lãng phí trung
+              bình / gia đình / tháng</div>
+            <div class="mt-8 text-xs text-muted">Dữ liệu khảo sát Q13: 30/111 hộ gia đình B2C</div>
+          </div>
+
+          <div class="split-item problem text-center">
+            <div style="font-size:36px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">&gt;80%
+            </div>
+            <div style="font-size:14px;color:var(--text-secondary);margin-top:4px;font-weight:600;">Người dùng bỏ app
+              quản lý sau 1 tuần</div>
+            <div class="mt-8 text-xs text-muted">Lý do chính: Nhập liệu bằng tay rườm rà (Q22: 58 người phản hồi)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 5: SOLUTION               -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="4">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">💡 GIẢI PHÁP & ĐỘT PHÁ</span>
+        <h2>HomeMind — Trợ lý AI cho tủ đồ gia đình</h2>
+        <p class="lead">Kết hợp AI Vision + AI Voice Tiếng Việt để loại bỏ hoàn toàn việc nhập liệu thủ công.</p>
+
+        <div class="grid-4 mb-20">
+          <div class="card card-highlight">
+            <span class="card-icon">🎤</span>
+            <div class="card-title">AI Voice Input</div>
+            <div class="card-desc">Nói tự nhiên: <em>"Tôi vừa mua đường, hạn 6 tháng sau"</em> — AI tự bóc tách và lưu
+              kho.</div>
+          </div>
+
+          <div class="card card-highlight">
+            <span class="card-icon">📷</span>
+            <div class="card-title">AI Vision Scan</div>
+            <div class="card-desc">Quét barcode hoặc nhãn sản phẩm. Nhận diện tên, danh mục, HSD trong <strong>3
+                giây</strong>.</div>
+          </div>
+
+          <div class="card card-highlight">
+            <span class="card-icon">⏰</span>
+            <div class="card-title">Smart Expiry Alert</div>
+            <div class="card-desc">Tự động phân loại: đồ tươi (3-5 ngày), đồ khô (1 tháng). Cảnh báo trước khi hết hạn.
+            </div>
+          </div>
+
+          <div class="card card-highlight">
+            <span class="card-icon">🛒</span>
+            <div class="card-title">Shopping Assistant</div>
+            <div class="card-desc">Tự động thêm vào DS mua sắm khi hết, đề xuất giá tốt từ Shopee/Lazada + Affiliate.
+            </div>
+          </div>
+        </div>
+
+        <span class="eyebrow" style="margin-top:16px;font-size:12px;">BẢNG SO SÁNH: ỨNG DỤNG TRUYỀN THỐNG VS
+          HOMEMIND</span>
+        <div class="comparison" style="margin-top:10px;">
+          <div class="comp-item old">
+            <div class="comp-label old">✗ App Quản Lý Truyền Thống</div>
+            <div class="comp-metric"><span>Thời gian nhập liệu</span><span>Manual (30-60s)</span></div>
+            <div class="comp-metric"><span>Nhắc hạn sử dụng</span><span>Cơ bản / Nhập tay HSD</span></div>
+            <div class="comp-metric"><span>Hỗ trợ Voice TV</span><span>Không có</span></div>
+            <div class="comp-metric"><span>Tỷ lệ bỏ app</span><span>&gt;80% sau 1 tuần</span></div>
+            <div class="comp-metric"><span>Đồng bộ gia đình</span><span>Thủ công / Độc lập</span></div>
+          </div>
+
+          <div class="comp-item new">
+            <div class="comp-label new">✓ HomeMind (AI Powered)</div>
+            <div class="comp-metric"><span>Thời gian nhập liệu</span><span><strong>AI Voice & Vision
+                  (3-5s)</strong></span></div>
+            <div class="comp-metric"><span>Nhắc hạn sử dụng</span><span><strong>Tự động + Thông minh</strong></span>
+            </div>
+            <div class="comp-metric"><span>Hỗ trợ Voice TV</span><span><strong>Tự nhiên Tiếng Việt</strong></span></div>
+            <div class="comp-metric"><span>Tỷ lệ bỏ app</span><span><strong>&lt;20% nhờ Zero Text Entry</strong></span>
+            </div>
+            <div class="comp-metric"><span>Đồng bộ gia đình</span><span><strong>Family Sharing real-time</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 6: MARKET ANALYSIS        -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="5">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">📊 PHÂN TÍCH THỊ TRƯỜNG</span>
+        <h2>Smart Home VN: $358M (2024) → $1.7B (2033)</h2>
+        <p class="lead">Thị trường bùng nổ với CAGR 9.20% — Giao thoa giữa Quản lý tủ đồ thông minh & Micro-POS tạp hóa
+          nhỏ.</p>
+
+        <div class="grid-3" style="margin-bottom:20px;">
+          <div class="card text-center">
+            <div class="card-number">$1.7B</div>
+            <div class="card-label">Smart Home VN (2033)</div>
+            <div class="mt-8">
+              <div class="progress-track">
+                <div class="progress-fill" style="width:100%"></div>
+              </div>
+            </div>
+            <div class="text-xs text-muted mt-8">CAGR 9.20% — IMARC Group Report<br>$358M (2024) → $453M (2026)</div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-number gold">$31B</div>
+            <div class="card-label">TMĐT Việt Nam (2026)</div>
+            <div class="mt-8">
+              <div class="progress-track">
+                <div class="progress-fill gold" style="width:75%"></div>
+              </div>
+            </div>
+            <div class="text-xs text-muted mt-8">Tăng trưởng &gt;20%/năm — Google e-Conomy<br>Nguồn thu Affiliate 5% từ
+              Shopee/TikTok</div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-number accent">111</div>
+            <div class="card-label">Mẫu Khảo Sát Thực Tế</div>
+            <div class="mt-8">
+              <div class="progress-track">
+                <div class="progress-fill accent" style="width:50%"></div>
+              </div>
+            </div>
+            <div class="text-xs text-muted mt-8">Dữ liệu sơ cấp EXE101 (06/2026)<br>96 B2C & 15 chủ cửa hàng B2B</div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1.8fr 1.2fr;gap:20px;margin-top:20px;">
+          <div class="card">
+            <h4 style="margin-bottom:8px;font-size:14px;color:var(--primary-dark);">📈 3 Động Lực Thị Trường Thuận Lợi
+            </h4>
+            <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.7;">
+              • <strong>Social:</strong> Lối sống bận rộn gây lãng phí 100K-300K₫/tháng/hộ. Chủ tạp hóa ngại dùng POS
+              rườm rà.<br>
+              • <strong>Technology:</strong> LLM Gemini 3.5 Flash chi phí (1.300-11.500₫/user/th). 5G triệt tiêu độ trễ
+              AI Voice.<br>
+              • <strong>Behavior:</strong> Thói quen mua sắm online tăng vọt → Đề xuất mua lại tự động đạt ROI cao qua
+              Affiliate.
+            </div>
+          </div>
+
+          <div class="card text-center card-highlight" style="padding:16px;">
+            <div style="font-size:12px;font-weight:800;color:var(--primary-dark);letter-spacing:1px;">QUY MÔ THỊ TRƯỜNG
+              (TAM / SAM / SOM)</div>
+            <div class="card-number" style="font-size:24px;margin-top:6px;">TAM: $1.7B</div>
+            <div style="font-size:12.5px;color:var(--text-secondary);margin-top:2px;">SAM: <strong>~$120M</strong> (7%
+              TAM)</div>
+            <div style="font-size:13px;color:var(--primary-dark);font-weight:800;margin-top:4px;">SOM:
+              <strong>$2.4M</strong> (Mục tiêu 60K users)
+            </div>
+            <div class="text-xs text-muted mt-8">Dựa trên khảo sát WTP B2C 29K/th & B2B 149K/th</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 7: MARKET VALIDATION      -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="6">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">🔬 MARKET VALIDATION</span>
+        <h2>111 người khảo sát thực tế — Dữ liệu sơ cấp</h2>
+        <p class="lead">Khảo sát & phỏng vấn sâu thực hiện bởi nhóm EXE101 kết hợp dữ liệu báo cáo UNEP và e-Conomy SEA.
+        </p>
+
+        <div class="grid-2 mb-24">
+          <div>
+            <h4 style="margin-bottom:12px;font-size:14px;">📊 Primary Data — Nỗi đau người dùng</h4>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <div
+                style="padding:10px 12px;background:#FEF2F2;border-radius:var(--radius-md);border:1px solid rgba(239,68,68,0.15);">
+                <div style="font-size:20px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">48/111
+                </div>
+                <div style="font-size:11px;color:var(--text-secondary);font-weight:500;">Quên mua món đã hết</div>
+              </div>
+              <div
+                style="padding:10px 12px;background:#FEF2F2;border-radius:var(--radius-md);border:1px solid rgba(239,68,68,0.15);">
+                <div style="font-size:20px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">47/111
+                </div>
+                <div style="font-size:11px;color:var(--text-secondary);font-weight:500;">Đồ hết hạn mới phát hiện</div>
+              </div>
+              <div
+                style="padding:10px 12px;background:#FEF2F2;border-radius:var(--radius-md);border:1px solid rgba(239,68,68,0.15);">
+                <div style="font-size:20px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">42/111
+                </div>
+                <div style="font-size:11px;color:var(--text-secondary);font-weight:500;">Quên HSD sản phẩm đã mở</div>
+              </div>
+              <div
+                style="padding:10px 12px;background:#FEF2F2;border-radius:var(--radius-md);border:1px solid rgba(239,68,68,0.15);">
+                <div style="font-size:20px;font-weight:800;color:var(--danger);font-family:var(--font-heading);">39/111
+                </div>
+                <div style="font-size:11px;color:var(--text-secondary);font-weight:500;">Mua trùng đồ vẫn còn</div>
+              </div>
+            </div>
+
+            <h4 style="margin:16px 0 8px;font-size:14px;">💰 Willingness to Pay & MVP Priority</h4>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <div
+                style="padding:10px 12px;background:var(--primary-light);border-radius:var(--radius-md);border:1px solid rgba(47,191,113,0.2);">
+                <div style="font-size:18px;font-weight:800;color:var(--primary-dark);">39 người</div>
+                <div style="font-size:11px;color:var(--text-secondary);">Trả 20K-50K₫/tháng B2C</div>
+              </div>
+              <div
+                style="padding:10px 12px;background:var(--primary-light);border-radius:var(--radius-md);border:1px solid rgba(47,191,113,0.2);">
+                <div style="font-size:18px;font-weight:800;color:var(--primary-dark);">72 người</div>
+                <div style="font-size:11px;color:var(--text-secondary);">Chọn Nhắc HSD là MVP #1</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="margin-bottom:12px;font-size:14px;">🎯 Chân dung khách hàng mục tiêu</h4>
+            <div class="card" style="padding:14px;margin-bottom:10px;">
+              <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                <span class="tag">B2C</span>
+                <span style="font-size:13px;font-weight:700;">"The Busy Optimizer"</span>
+              </div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;">
+                • 18-40 tuổi: NV văn phòng (29), Sinh viên (22), Cha mẹ con nhỏ (19)<br>
+                • Thu nhập: 7-15 triệu/tháng (40 người), 15-30 triệu (28 người)<br>
+                • Kênh tiếp cận chính: Bạn bè giới thiệu (63), Facebook (58), TikTok (57)
+              </div>
+            </div>
+
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px;">
+                <span class="tag tag-gold">B2B Micro</span>
+                <span style="font-size:13px;font-weight:700;">"The Agile Micro-Retailer"</span>
+              </div>
+              <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;">
+                • Chủ tạp hóa nhỏ (18 người), Bán online (5 người)<br>
+                • Cần công cụ quản lý tồn kho đơn giản, chi phí thấp<br>
+                • Sẵn sàng trả 100K-200K₫/tháng (12 người)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 flex-center" style="gap:10px;margin-top:12px;">
+          <span style="font-size:12.5px;color:var(--text-muted);font-weight:600;">📊 Dynamic Business Model
+            Canvas:</span>
+          <a href="https://business-model-canvas-exe-101.vercel.app/" target="_blank"
+            style="font-size:12.5px;color:var(--primary-dark);font-weight:800;text-decoration:none;">business-model-canvas-exe-101.vercel.app
+            ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 8: PRODUCT DEMO           -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="7">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow" style="font-size:14px;">📱 PRODUCT DEMO</span>
+        <h2 style="font-size:clamp(28px, 3.2vw, 38px);margin-bottom:8px;">Giao diện thực tế ứng dụng HomeMind</h2>
+        <p class="lead" style="font-size:15.5px;margin-bottom:10px;max-width:840px;">
+          Nói tự nhiên: <em>"Tôi vừa mua đường hạn 6 tháng, sữa chua hạn 7 ngày và dầu gội hạn 1 năm"</em> — AI tự động
+          bóc tách 3 sản phẩm trong 3 giây.
+        </p>
+
+        <div style="display:flex;gap:12px;justify-content:center;align-items:center;margin-bottom:10px;flex-wrap:wrap;">
+          <span class="tag tag-gold" style="font-size:11.5px;padding:4px 14px;">🏆 BẰNG CHỨNG PMF: 72/111 chọn Nhắc HSD
+            là MVP #1 | 39/111 sẵn sàng chi trả B2C</span>
+          <span class="tag tag-blue" style="font-size:11.5px;padding:4px 14px;">🛡️ CORE FLOW DEMO: Voice Input ➔ AI
+            Confirm | Video Backup Ready</span>
+        </div>
+
+        <div style="display:flex;gap:36px;align-items:center;justify-content:center;margin:16px 0 20px;">
+          <!-- Phone Screenshot 1: AI Voice Input -->
+          <div style="text-align:center;">
+            <div class="phone-frame-real">
+              <img src="assets/images/demo_voice_input.png" alt="Giao diện AI Voice Input" class="phone-screen-img">
+            </div>
+            <div style="font-size:14.5px;font-weight:800;color:var(--primary-dark);margin-top:10px;">🎙️ Step 1: AI
+              Voice Input ("Đang nghe...")</div>
+          </div>
+
+          <!-- Transition Arrow -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+            <span style="font-size:32px;color:var(--primary);font-weight:800;">➔</span>
+            <span class="tag tag-gold" style="font-size:12px;padding:6px 14px;font-weight:800;">⚡ 3 giây AI bóc
+              tách</span>
+          </div>
+
+          <!-- Phone Screenshot 2: AI Confirmation Screen -->
+          <div style="text-align:center;">
+            <div class="phone-frame-real">
+              <img src="assets/images/demo_ai_confirm.png" alt="Giao diện AI Confirmation Screen"
+                class="phone-screen-img">
+            </div>
+            <div style="font-size:14.5px;font-weight:800;color:var(--primary-dark);margin-top:10px;">✨ Step 2: AI
+              Confirmation ("Lưu 3 món")</div>
+          </div>
+        </div>
+
+        <div class="mt-16 flex-center" style="gap:16px;flex-wrap:wrap;margin-top:14px;">
+          <span style="font-size:13.5px;color:var(--text-muted);font-weight:600;">📱 Live App Prototype:</span>
+          <a href="https://demo-home-mind.vercel.app/" target="_blank"
+            style="font-size:13.5px;color:var(--primary-dark);font-weight:800;text-decoration:none;">demo-home-mind.vercel.app
+            ↗</a>
+          <span style="color:var(--border);">|</span>
+          <span style="font-size:13.5px;color:var(--text-muted);font-weight:600;">📺 Demo Shorts Video:</span>
+          <a href="https://youtube.com/shorts/KQFDGCgzmQw" target="_blank"
+            style="font-size:13.5px;color:var(--primary-dark);font-weight:800;text-decoration:none;">youtube.com/shorts/KQFDGCgzmQw
+            ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 9: BUSINESS MODEL         -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="8">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">💼 MÔ HÌNH KINH DOANH</span>
+        <h2>Freemium + Subscription + Affiliate</h2>
+        <p class="lead">Đa dạng hóa dòng tiền: B2C cá nhân (29K), gói Gia đình (59K), B2B cửa hàng (149K) và 5% hoa hồng
+          Affiliate TMĐT.</p>
+
+        <div class="grid-4" style="margin-bottom:18px;">
+          <div class="card text-center">
+            <span style="font-size:26px;">🌱</span>
+            <div class="card-title mt-8">Free Tier</div>
+            <div style="font-size:24px;font-weight:800;color:var(--text-secondary);font-family:var(--font-heading);">0₫
+            </div>
+            <div class="card-desc mt-8">
+              Tối đa 30 sản phẩm<br>
+              15 requests AI/tháng<br>
+              Nhắc HSD cơ bản
+            </div>
+          </div>
+
+          <div class="card text-center card-highlight">
+            <span style="font-size:26px;">🎯</span>
+            <div class="card-title mt-8">B2C Premium</div>
+            <div style="font-size:24px;font-weight:800;color:var(--primary-dark);font-family:var(--font-heading);">
+              29.000₫<span style="font-size:12px;color:var(--text-muted);">/tháng</span></div>
+            <div class="card-desc mt-8">
+              Không giới hạn SP & AI Voice<br>
+              60 requests AI/tháng<br>
+              Báo cáo chi tiêu gia đình
+            </div>
+          </div>
+
+          <div class="card text-center"
+            style="border-color:var(--gold);background:linear-gradient(180deg,rgba(245,158,11,0.05),var(--bg-card));">
+            <span style="font-size:26px;">👨‍👩‍👧‍👦</span>
+            <div class="card-title mt-8">Family Premium</div>
+            <div style="font-size:24px;font-weight:800;color:#B45309;font-family:var(--font-heading);">59.000₫<span
+                style="font-size:12px;color:var(--text-muted);">/tháng</span></div>
+            <div class="card-desc mt-8">
+              Chia sẻ 5 thành viên<br>
+              100 requests AI/tháng<br>
+              Đồng bộ tủ đồ real-time
+            </div>
+          </div>
+
+          <div class="card text-center card-highlight">
+            <span style="font-size:26px;">🏪</span>
+            <div class="card-title mt-8">B2B Micro-POS</div>
+            <div style="font-size:24px;font-weight:800;color:var(--accent);font-family:var(--font-heading);">
+              149.000₫<span style="font-size:12px;color:var(--text-muted);">/tháng</span></div>
+            <div class="card-desc mt-8">
+              180 requests AI/tháng<br>
+              Quản lý tồn kho tạp hóa<br>
+              Cảnh báo cận HSD tự động
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-bottom:18px;">
+          <div class="card">
+            <h4>💰 3 Dòng Doanh Thu (Revenue Streams)</h4>
+            <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-top:4px;">
+              1. <strong>Subscription Fees:</strong> Phí cố định từ gói Premium (29K), Family (59K) & Micro-POS
+              (149K).<br>
+              2. <strong>Affiliate Commissions:</strong> Hoa hồng trung bình 5% (Shopee 1-10%, TikTok 2-15%, AOV
+              200.000₫).<br>
+              3. <strong>B2B Data Insights (Phase 3):</strong> Báo cáo xu hướng tiêu dùng FMCG cho nhà phân phối.
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>📊 Cơ Cấu Chi Phí (Cost Structure)</h4>
+            <div style="font-size:12px;color:var(--text-secondary);line-height:1.6;margin-top:4px;">
+              • <strong>COGS:</strong> AI Gemini Flash (1.3K₫ Free, 4K₫ Premium, 6.5K₫ Family, 11.5K₫ POS), Cloud
+              (1M₫/th), Payment (2.5%), Store Fee (15%).<br>
+              • <strong>OPEX (Cash):</strong> Marketing 3M₫/quý (12M₫ N1), Token Stipend 900K₫/quý (6 người),
+              Maintenance ~4M₫ N1.<br>
+              • <strong>Deferred Salary:</strong> Lương treo founder 18M₫/quý (72M N1) → 27M₫/quý (108M N2) → 36M₫/quý
+              (144M N3).
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-highlight text-center"
+          style="margin-top:16px;padding:10px 16px;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:10px;">
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-weight:700;">ARPU TRUNG BÌNH</div>
+            <div style="font-size:14px;font-weight:800;color:var(--primary-dark);">35.525₫/tháng</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-weight:700;">CAC NĂM 1</div>
+            <div style="font-size:14px;font-weight:800;color:var(--gold);">65.934₫</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-weight:700;">LTV NĂM 1</div>
+            <div style="font-size:14px;font-weight:800;color:var(--primary);">216.339₫</div>
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--text-muted);font-weight:700;">TỶ LỆ LTV / CAC</div>
+            <div style="font-size:14px;font-weight:800;color:var(--accent);">3.28× (Healthy &gt;3×)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 10: ROADMAP & EXPANSION    -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="9">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">🚀 LỘ TRÌNH PHÁT TRIỂN</span>
+        <h2>3-Year Roadmap & User Growth Plan</h2>
+        <p class="lead">Lộ trình 3 năm (2027–2029) phát triển từ Pilot tại TP.HCM đến mở rộng 3.720 trả phí toàn quốc.
+        </p>
+
+        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px;">
+          <div class="card">
+            <h4 style="margin-bottom:10px;font-size:14px;color:var(--primary-dark);">📍 Timeline Triển Khai 12-18 Tháng
+            </h4>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-title">Pilot (Q1/2027)</div>
+                <div class="timeline-desc">50 testers · 7 Paid users · Hoàn thiện MVP AI Voice & Expiry Reminder</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot gold"></div>
+                <div class="timeline-title">Q2 - Q3/2027</div>
+                <div class="timeline-desc">Launch Google Play & App Store · 55 Paid users · Mở Affiliate Shopee/TikTok
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot orange"></div>
+                <div class="timeline-title">Q4/2027 (Cuối Năm 1)</div>
+                <div class="timeline-desc">95 Paid users (60 Premium, 25 Family, 10 POS) · Doanh thu Q4 ~11.2M₫/tháng
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot" style="background:var(--accent);"></div>
+                <div class="timeline-title">Năm 2 & 3 (2028 - 2029)</div>
+                <div class="timeline-desc">835 Paid users (Năm 2) → 3.720 Paid users (Năm 3) · Doanh thu N3 đạt 1.046
+                  tỷ₫</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 style="margin-bottom:10px;font-size:14px;color:var(--primary-dark);">📈 Chỉ Số Tăng Trưởng 3 Năm
+              (2027-2029)</h4>
+            <table style="width:100%;font-size:12px;border-collapse:collapse;line-height:1.8;">
+              <thead>
+                <tr style="border-bottom:1px solid var(--border);text-align:left;color:var(--text-muted);">
+                  <th style="padding-bottom:4px;">Chỉ số</th>
+                  <th style="padding-bottom:4px;">Năm 1 (2027)</th>
+                  <th style="padding-bottom:4px;">Năm 2 (2028)</th>
+                  <th style="padding-bottom:4px;">Năm 3 (2029)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid var(--border-light);">
+                  <td style="font-weight:600;padding:6px 0;">Total Paid Users</td>
+                  <td style="font-weight:700;">95</td>
+                  <td style="font-weight:700;color:var(--primary-dark);">835</td>
+                  <td style="font-weight:700;color:var(--accent);">3.720</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border-light);">
+                  <td style="font-weight:600;padding:6px 0;">Micro-POS Stores</td>
+                  <td>10</td>
+                  <td>65</td>
+                  <td style="font-weight:700;color:var(--gold);">220</td>
+                </tr>
+                <tr style="border-bottom:1px solid var(--border-light);">
+                  <td style="font-weight:600;padding:6px 0;">MRR Q4 (Hàng tháng)</td>
+                  <td>~11.2 triệu₫</td>
+                  <td>~93.8 triệu₫</td>
+                  <td style="font-weight:700;color:var(--primary-dark);">~409.1 triệu₫</td>
+                </tr>
+                <tr>
+                  <td style="font-weight:600;padding:6px 0;">Tổng Doanh Thu/Năm</td>
+                  <td>19.8 triệu₫</td>
+                  <td>210.3 triệu₫</td>
+                  <td style="font-weight:700;color:var(--gold);">1.046 tỷ₫</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card card-highlight" style="padding:10px 16px;margin-top:12px;">
+          <h4 style="margin-bottom:4px;font-size:12.5px;color:var(--primary-dark);">⚙️ VẬN HÀNH & NỀN TẢNG CÔNG NGHỆ
+            (TECH PIPELINE)</h4>
+          <div style="font-size:11.5px;color:var(--text-secondary);line-height:1.5;">
+            • <strong>Quy trình tự động hóa:</strong> User Voice Input ➔ Gemini Flash LLM Parser ➔ Cloud Realtime
+            Database ➔ Smart Expiry Cron Engine ➔ Affiliate Shopee Recommendation.<br>
+            • <strong>CI/CD Tech Pipeline:</strong> Tự động hóa kiểm thử & triển khai với Harness CI/CD Pipeline,
+            MongoDB Atlas Cloud Cluster & Firebase Push Notification Service.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 11: FINANCIAL             -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide" data-index="10">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner">
+        <span class="eyebrow">📈 DỰ PHÓNG TÀI CHÍNH (P&L 3 NĂM)</span>
+        <h2>3-Year Financial Projection & Unit Economics</h2>
+        <p class="lead">Tổng doanh thu Năm 3 đạt <strong>1.046 tỷ₫</strong> (MRR Q4 ~409M₫). Hòa vốn Full Accrual tại
+          <strong>Q4/2028</strong>.
+        </p>
+
+        <div class="grid-2" style="margin-bottom:20px;">
+          <!-- Chart 1: MRR Growth -->
+          <div class="chart-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <h4 style="font-size:13.5px;color:var(--primary-dark);">📊 Biểu Đồ MRR Growth (VNĐ/tháng)</h4>
+              <span class="tag tag-gold" style="font-size:10px;">🚀 ARR N3 ~1.64 tỷ₫</span>
+            </div>
+            <div class="chart-wrapper">
+              <div class="chart-y-axis">
+                <span>400M</span>
+                <span>300M</span>
+                <span>200M</span>
+                <span>100M</span>
+                <span>0M</span>
+              </div>
+              <div class="chart-grid-line" style="top:0%"></div>
+              <div class="chart-grid-line" style="top:25%"></div>
+              <div class="chart-grid-line" style="top:50%"></div>
+              <div class="chart-grid-line" style="top:75%"></div>
+
+              <div class="chart-bars">
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value">11.2M₫</div>
+                  <div class="chart-bar-fill primary" style="height:12%;"></div>
+                  <div class="chart-x-label">Năm 1 (2027)</div>
+                </div>
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value">93.8M₫</div>
+                  <div class="chart-bar-fill primary" style="height:40%;"></div>
+                  <div class="chart-x-label">Năm 2 (2028)</div>
+                </div>
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value primary">409.1M₫</div>
+                  <div class="chart-bar-fill primary" style="height:100%;"></div>
+                  <div class="chart-x-label">Năm 3 (2029)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart 2: User Growth -->
+          <div class="chart-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <h4 style="font-size:13.5px;color:var(--accent);">👥 Biểu Đồ Paid User Growth (Khách hàng)</h4>
+              <span class="tag tag-orange" style="font-size:10px;">👨‍👩‍👧‍👦 3.720 Users</span>
+            </div>
+            <div class="chart-wrapper">
+              <div class="chart-y-axis">
+                <span>4.000</span>
+                <span>3.000</span>
+                <span>2.000</span>
+                <span>1.000</span>
+                <span>0</span>
+              </div>
+              <div class="chart-grid-line" style="top:0%"></div>
+              <div class="chart-grid-line" style="top:25%"></div>
+              <div class="chart-grid-line" style="top:50%"></div>
+              <div class="chart-grid-line" style="top:75%"></div>
+
+              <div class="chart-bars">
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value">95</div>
+                  <div class="chart-bar-fill accent" style="height:10%;"></div>
+                  <div class="chart-x-label">Năm 1 (2027)</div>
+                </div>
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value">835</div>
+                  <div class="chart-bar-fill accent" style="height:35%;"></div>
+                  <div class="chart-x-label">Năm 2 (2028)</div>
+                </div>
+                <div class="chart-bar-col">
+                  <div class="chart-pill-value accent">3.720</div>
+                  <div class="chart-bar-fill accent" style="height:100%;"></div>
+                  <div class="chart-x-label">Năm 3 (2029)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:20px;">
+          <div class="card text-center">
+            <div class="card-number" style="font-size:22px;">Q2/2028</div>
+            <div class="card-label">Điểm Hòa Vốn (Break-even Cash)</div>
+            <div class="text-xs text-muted mt-8">Cơ sở: 482 users trả phí (FC cash 14.8M₫/th)</div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-number gold" style="font-size:22px;">~599 triệu₫</div>
+            <div class="card-label">Dòng Tiền Tích Lũy 3 Năm</div>
+            <div class="text-xs text-muted mt-8">Lợi nhuận ròng tích lũy (Full Accrual): ~275 triệu₫</div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-number accent" style="font-size:22px;">3.28× ➔ 71×</div>
+            <div class="card-label">Tỷ Lệ LTV / CAC (Năm 1 ➔ N3)</div>
+            <div class="text-xs text-muted mt-8">CAC N1: 65.934₫ | LTV N1: 216.339₫ (healthy &gt;3×)</div>
+          </div>
+        </div>
+        <div style="margin-top:14px;text-align:center;">
+          <a href="https://docs.google.com/spreadsheets/d/1bQdpnB5kuysCb3Hh_5Kw2yXbMBGhBDhCyoy9NUoBQKs/edit?gid=335397862#gid=335397862"
+            target="_blank" class="tag tag-gold"
+            style="font-size:12px;padding:8px 20px;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;gap:6px;">
+            <span>📊</span> <span>Xem Báo Cáo Tài Chính Chi Tiết (Google Sheets)</span> <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 12: FUNDRAISING           -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide slide-closing" data-index="11">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner text-center">
+        <span class="eyebrow" style="margin-bottom:6px;">💰 KÊU GỌI ĐẦU TƯ (FUNDRAISING OFFER)</span>
+        <h2 style="margin-bottom:10px;">Huy động vốn Pre-Seed 56 triệu₫ &amp; Định giá Comparables ~2.41 tỷ₫</h2>
+
+        <div class="stat-row" style="gap:36px;margin:12px 0;">
+          <div>
+            <div class="stat-value">56 triệu₫</div>
+            <div class="stat-label">Vốn Ban Đầu (Founders + FPT Grant)</div>
+          </div>
+          <div>
+            <div class="stat-value gold">1.05 tỷ₫</div>
+            <div class="stat-label">Định Giá Berkus (Pre-money)</div>
+          </div>
+          <div>
+            <div class="stat-value accent">~2.41 tỷ₫</div>
+            <div class="stat-label">Định Giá Comparables EV (Cơ sở Sum-of-Parts)</div>
+          </div>
+        </div>
+
+        <div class="grid-2 mx-auto" style="max-width:840px;text-align:left;margin-bottom:12px;">
+          <div class="card" style="padding:14px 18px;">
+            <h4 style="margin-bottom:10px;color:var(--primary-dark);font-size:13px;">💸 Phân Bổ Nguồn Vốn (Use of Funds
+              - 56M₫)</h4>
+            <div>
+              <div class="fund-bar">
+                <div class="fund-label">Product & Tech (AI API, Cloud)</div>
+                <div class="fund-track">
+                  <div class="fund-fill" style="width:41%;background:var(--primary);">41%</div>
+                </div>
+              </div>
+              <div class="fund-bar">
+                <div class="fund-label">Marketing & Acquisition</div>
+                <div class="fund-track">
+                  <div class="fund-fill" style="width:29%;background:var(--gold);">29%</div>
+                </div>
+              </div>
+              <div class="fund-bar">
+                <div class="fund-label">Dự Phòng Rủi Ro</div>
+                <div class="fund-track">
+                  <div class="fund-fill" style="width:18%;background:var(--accent);">18%</div>
+                </div>
+              </div>
+              <div class="fund-bar">
+                <div class="fund-label">Operation & Admin</div>
+                <div class="fund-track">
+                  <div class="fund-fill" style="width:13%;background:var(--text-muted);">13%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center"
+            style="padding:14px 18px;display:flex;flex-direction:column;justify-content:center;">
+            <div
+              style="font-size:11.5px;color:var(--text-secondary);margin-bottom:8px;line-height:1.5;text-align:left;">
+              🚩 <strong>Mốc Milestone Năm 1 (2027):</strong> Đạt 95 Paid Users, 10 POS stores, MRR ~11.2M₫/tháng.<br>
+              🚩 <strong>Mốc Milestone Năm 3 (2029):</strong> Đạt 3.720 Paid Users, 220 POS stores, MRR
+              ~409.1M₫/tháng.<br>
+              💼 <strong>Vốn ban đầu:</strong> 6M (Founders × 6) + 50M (FPT Grant) | <strong>Berkus Pre-money:</strong>
+              1.05 tỷ₫ | <strong>Comparables (Cơ sở):</strong> ~2.41 tỷ₫
+            </div>
+            <div class="divider" style="margin:8px 0;"></div>
+            <p style="font-size:12px;color:var(--text-secondary);line-height:1.5;font-style:italic;">
+              "Không chỉ là một ứng dụng ghi chú —<br>
+              chúng tôi đang giải phóng gánh nặng ghi nhớ<br>
+              cho hàng triệu gia đình Việt."
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="margin-top:8px;padding:8px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+          <div style="text-align:left;">
+            <div style="font-size:13.5px;font-weight:800;font-family:var(--font-heading);color:var(--text);">🏡 HomeMind
+              — Nhóm EXE101 (ĐH FPT)</div>
+            <div style="font-size:11px;color:var(--text-secondary);margin-top:1px;">
+              📧 homemind26@gmail.com · 🌐 homemind.app
+            </div>
+          </div>
+          <div style="font-size:15px;font-weight:800;color:var(--primary);font-family:var(--font-heading);">
+            Sẵn sàng đón nhận ý kiến đóng góp! 🙏
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ -->
+    <!-- SLIDE 13: THANK YOU & Q&A       -->
+    <!-- ════════════════════════════════ -->
+    <section class="slide slide-closing" data-index="12">
+      <div class="slide-branding">
+        <img src="assets/images/logo/Logo_FPT.svg" alt="FPT University" class="brand-logo-fpt">
+        <div class="brand-divider"></div>
+        <img src="assets/images/logo/logo.png" alt="HomeMind Logo" class="brand-logo-project">
+      </div>
+      <div class="slide-inner text-center">
+        <span class="eyebrow eyebrow-accent" style="margin-bottom:8px;">🙏 LỜI CẢM ƠN & TRAO ĐỔI (Q&A)</span>
+        <h2 style="font-size:clamp(32px, 3.5vw, 44px);margin-bottom:10px;">Cảm ơn Quý Hội Đồng & Nhà Đầu Tư!</h2>
+        <p class="lead mx-auto mb-20" style="max-width:760px;">
+          <strong>HomeMind</strong> — Giải phóng gánh nặng ghi nhớ & giảm thiểu lãng phí thực phẩm cho hàng triệu gia
+          đình Việt.
+        </p>
+
+        <div class="grid-2 mx-auto" style="max-width:920px;text-align:left;margin-bottom:20px;">
+          <!-- Interactive Live Prototype Card -->
+          <div class="card card-highlight text-center"
+            style="padding:22px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+            <span style="font-size:36px;margin-bottom:6px;">🚀</span>
+            <div style="font-size:16px;font-weight:800;color:var(--primary-dark);margin-bottom:6px;">TRẢI NGHIỆM
+              PROTOTYPE TRỰC TUYẾN</div>
+            <div
+              style="font-size:12.5px;color:var(--text-secondary);margin-bottom:16px;line-height:1.5;max-width:340px;">
+              Dùng thử ứng dụng HomeMind trực tiếp trên trình duyệt với đầy đủ tính năng AI Voice & Quản lý tủ đồ
+            </div>
+            <a href="https://demo-home-mind.vercel.app/" target="_blank"
+              style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--primary);color:#fff;font-weight:800;font-size:14px;border-radius:var(--radius-full);text-decoration:none;box-shadow:0 4px 16px rgba(47,191,113,0.35);transition:all 0.3s ease;">
+              <span>👉</span> <span>demo-home-mind.vercel.app</span> <span>↗</span>
+            </a>
+          </div>
+
+          <!-- Contact & Project Links Card -->
+          <div class="card" style="padding:20px;display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <h4
+                style="margin-bottom:12px;color:var(--primary-dark);font-size:14.5px;display:flex;align-items:center;gap:8px;">
+                <span style="font-size:18px;">📬</span> THÔNG TIN DỰ ÁN & LIÊN HỆ
+              </h4>
+              <div style="font-size:12.5px;color:var(--text-secondary);line-height:1.8;">
+                🏢 <strong>Đội ngũ:</strong> Nhóm 6 thành viên (EXE101 - ĐH FPT)<br>
+                📧 <strong>Email:</strong> <a href="mailto:homemind26@gmail.com"
+                  style="color:var(--primary-dark);text-decoration:none;font-weight:700;">homemind26@gmail.com</a><br>
+                📈 <strong>Báo cáo tài chính:</strong> <a
+                  href="https://docs.google.com/spreadsheets/d/1bQdpnB5kuysCb3Hh_5Kw2yXbMBGhBDhCyoy9NUoBQKs/edit?gid=335397862#gid=335397862"
+                  target="_blank" style="color:var(--primary-dark);text-decoration:none;font-weight:700;">Financial
+                  Model (Google Sheets) ↗</a><br>
+                📊 <strong>Business Model Canvas:</strong> <a href="https://business-model-canvas-exe-101.vercel.app/"
+                  target="_blank" style="color:var(--primary-dark);text-decoration:none;font-weight:700;">BMC
+                  Interactive ↗</a><br>
+                🎬 <strong>Video Demo:</strong> <a href="https://youtube.com/shorts/KQFDGCgzmQw" target="_blank"
+                  style="color:var(--primary-dark);text-decoration:none;font-weight:700;">Video Demo Shorts ↗</a>
+              </div>
+            </div>
+            <div class="tag tag-gold text-center"
+              style="margin-top:12px;padding:6px 12px;font-size:11.5px;font-weight:700;display:block;">
+              💬 Sẵn sàng trả lời mọi câu hỏi & góp ý từ Quý Hội Đồng!
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="padding:10px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);display:inline-flex;align-items:center;gap:14px;">
+          <span style="font-size:20px;">🏡</span>
+          <span style="font-size:13.5px;font-weight:700;color:var(--text-secondary);">
+            "Smart Home Inventory Powered by AI — Simple, Fast & Essential"
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="assets/js/presentation.js"></script>
+</body>
+
+</html>
