@@ -2,6 +2,8 @@
 
 Deck mới theo visual template kỳ trước, thời lượng khoảng 16–18 phút.
 
+Kịch bản đầy đủ theo từng slide nằm trong file [`speaker-notes.html`](speaker-notes.html), có thể mở trực tiếp trên trình duyệt hoặc in ra để tập.
+
 1. **Opening, 45 giây** — giới thiệu HomeMind và chuyển từ khảo sát sang triển khai MVP.
 2. **Đội ngũ, 1 phút** — 4 người Product & Tech, 2 người Growth; nhấn cách phối hợp.
 3. **Sản phẩm, 1 phút 30 giây** — đi qua AI Voice, Smart Alert, Shopping List, Freemium và AI Vision.
